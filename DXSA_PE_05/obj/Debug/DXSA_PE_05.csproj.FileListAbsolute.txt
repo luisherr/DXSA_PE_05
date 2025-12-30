@@ -1,0 +1,4 @@
+C:\Desarrollo Data Express\Data Express\PERÚ\codigos\DXSA_PE_05\DXSA_PE_05\obj\Debug\DXSA_PE_05.csproj.AssemblyReference.cache
+C:\Desarrollo Data Express\Data Express\PERÚ\codigos\DXSA_PE_05\DXSA_PE_05\obj\Debug\DXSA_PE_05.DXSA_PE_05Control.resources
+C:\Desarrollo Data Express\Data Express\PERÚ\codigos\DXSA_PE_05\DXSA_PE_05\obj\Debug\DXSA_PE_05.csproj.GenerateResource.cache
+C:\Desarrollo Data Express\Data Express\PERÚ\codigos\DXSA_PE_05\DXSA_PE_05\obj\Debug\DXSA_PE_05.csproj.CoreCompileInputs.cache
