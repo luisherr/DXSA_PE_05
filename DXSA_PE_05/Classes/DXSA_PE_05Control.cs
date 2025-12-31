@@ -17,10 +17,32 @@ namespace DXSA_PE_05
 
         protected override void OnStart(string[] args)
         {
+            LogSistema.RegistrarEnArchivoLog("Servicio", "Iniciando servicio DXSA_PE_05");
+
+            // Configurar intervalo desde App.config
+            try
+            {
+                int intervalo = Convert.ToInt32(ConfigurationManager.AppSettings["IntervaloTiempo"]);
+                this.TimerControl.Interval = intervalo;
+            }
+            catch
+            {
+                this.TimerControl.Interval = 60000; // 1 minuto por defecto
+            }
+
+            // Iniciar el timer
+            this.TimerControl.Start();
+            LogSistema.RegistrarEnArchivoLog("Servicio", $"Timer iniciado con intervalo de {this.TimerControl.Interval}ms");
         }
 
         protected override void OnStop()
         {
+            LogSistema.RegistrarEnArchivoLog("Servicio", "Deteniendo servicio DXSA_PE_05");
+
+            // Detener el timer
+            this.TimerControl.Stop();
+
+            LogSistema.RegistrarEnArchivoLog("Servicio", "Servicio detenido correctamente");
         }
 
         private void TimerControl_Elapsed(object sender, EventArgs e)

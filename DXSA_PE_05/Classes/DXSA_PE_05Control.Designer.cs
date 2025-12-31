@@ -36,7 +36,7 @@ namespace DXSA_PE_05
             //
             // TimerControl
             //
-            this.TimerControl.Enabled = true;
+            this.TimerControl.Enabled = false; // Se inicia en OnStart
             this.TimerControl.Interval = 6000D;
             this.TimerControl.Elapsed += new System.Timers.ElapsedEventHandler(this.TimerControl_Elapsed);
             //
